@@ -1,0 +1,460 @@
+/* Réinitialisation */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between; /* Place le nom à gauche et la nav à droite */
+    align-items: center; /* Centre verticalement */
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+}
+.logo {
+    color: #ADD8E6 !important; /* Teste avec une couleur voyante */
+    font-size: 24px !important;
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style: none;
+    display: flex; /* Affiche les liens en ligne */
+    gap: 40px; /* Espace entre les liens */
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+	color: #ff6347; /* Couleur orangée au survol */
+    text-decoration: underline;
+}
+
+/* Styles pour la section hero */
+.hero {
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Espace entre le texte et l'image */
+    padding: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le contenu (texte et bouton) */
+.hero .content {
+    flex: 1; /* Prend l'espace disponible */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+/* Styles pour le titre */
+.hero .content h1 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Espace sous le titre */
+    color: #333;
+}
+
+/* Styles pour le prénom */
+.hero .content h1 .prenom {
+    color: #ff6347; /* Couleur orangée pour le prénom */
+}
+
+.hero .content .btn {
+    display: block; /* Change en block pour centrer */
+    width: fit-content; /* Largeur adaptée au contenu */
+    margin: 0 auto; /* Centre le bouton horizontalement */
+    padding: 10px 20px;
+    background-color: #0080ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero .content .btn:hover {
+    background-color: #dd7b40;
+}
+
+/* Styles pour l'image */
+.hero .image {
+    flex: 1; /* Prend l'espace disponible */
+    text-align: right; /* Aligne l'image à droite */
+}
+
+.hero .image img {
+     width: 300px; /* Largeur fixe */
+    height: auto; /* Garde le ratio de l'image */
+    border-radius: 8px;
+}
+
+/* À PROPOS */
+.about {
+    background: #eaeaea;
+    padding: 50px;
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centre le titre */
+}
+/* styles.css */
+
+/* Styles pour la section "À propos" */
+.about {
+    padding: 90px 20px; /* Espacement autour de la section */
+    background-color: #eaeaea;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centre le titre */
+}
+
+/* Styles pour le titre "À propos" */
+.about h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #ff6347;
+}
+
+/* Styles pour le contenu (texte et image) */
+.about .content {
+    display: flex; /* Active Flexbox pour aligner le texte et l'image */
+    align-items: center; /* Aligne les éléments en haut */
+    gap: 40px; /* Espace entre le texte et l'image */
+}
+
+/* Styles pour le texte (paragraphes et bouton) */
+.about .content .text {
+    flex: 1; /* Prend l'espace disponible */
+    text-align: left; /* Aligne le texte à gauche */
+	margin-left: 40px;
+}
+
+/* Styles pour les paragraphes */
+.about .content .text p {
+    font-size: 20px;
+    margin-bottom: 20px; /* Espace entre les paragraphes */
+    color: #666;
+    text-align: left; /* Aligne chaque paragraphe à gauche */
+}
+
+/* Styles pour le bouton */
+.about .content .text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0080ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px; /* Espace au-dessus du bouton */
+    text-align: left; /* Aligne le bouton à droite */
+	transition: background-color 0.3s ease;
+}
+
+.about .content .text .btn:hover {
+    background-color: #ff6347;
+}
+
+/* Styles pour l'image */
+.about .content .image {
+    flex: 0 0 auto; /* Empêche l'image de grandir ou rétrécir */
+}
+
+.about .content .image img {
+    width: 180px; /* Taille de l'image */
+    height: 220px; /* Taille de l'image */
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Assure que l'image couvre le cercle */
+    border: 3px solid #ff6347; /* Bordure autour de l'image */
+	transform: translateX(-120px);
+}
+
+/* Styles pour la section "Projets" */
+.projects {
+    padding: 100px 20px;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centre le titre */
+}
+
+/* Styles pour le titre "Mes Projets" */
+.projects h2 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #ff6347;
+}
+
+/* Styles pour la liste des projets */
+.projects .project-list {
+    display: flex; /* Utilise Flexbox pour aligner les projets */
+    flex-wrap: wrap; /* Permet aux projets de passer à la ligne sur les petits écrans */
+    gap: 20px; /* Espace entre les projets */
+    justify-content: center; /* Centre les projets horizontalement */
+}
+
+/* Styles pour chaque projet */
+.projects .project {
+    flex: 1 1 300px; /* Flexibilité : chaque projet prend au moins 300px de largeur */
+    max-width: 400px; /* Largeur maximale d'un projet */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+/* Styles pour le texte du projet */
+.projects .project p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* Styles pour les tags (span) */
+.projects .project span {
+    display: block; /* Affiche les tags en bloc */
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 15px;
+	text-align: center;
+}
+
+/* Styles pour le bouton "Voir" */
+.projects .project .btn {
+    display: inline-block; /* Change en block pour centrer */
+    width: fit-content; /* Largeur adaptée au contenu */
+    margin: 0 auto; /* Centre le bouton horizontalement */
+    padding: 10px 30px;
+    background-color: #0080ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center; /* Centre le texte du bouton */
+	border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.projects .project .btn:hover {
+    background-color: #ff6347;
+}
+
+/* Styles pour la section "Compétences" */
+.skills {
+    padding: 40px 20px;
+    background-color: #eaeaea;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centre le titre */
+}
+
+/* Styles pour le titre "Mes Compétences" */
+.skills h2 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #ff6347;
+}
+
+/* Styles pour le conteneur des compétences */
+.skills .skills-container {
+    display: flex; /* Active Flexbox pour aligner les sections côte à côte */
+    justify-content: space-between; /* Espace entre les sections */
+    gap: 40px; /* Espace entre les sections */
+    max-width: 1200px; /* Limite la largeur du conteneur */
+    height: 400px;
+	margin: 0 auto; /* Centre le conteneur */
+}
+
+/* Styles pour les boîtes Soft Skills et Hard Skills */
+.skills .soft-skills,
+.skills .hard-skills {
+    flex: 1; /* Chaque boîte prend un espace égal */
+	width: 45%;
+	height: 200px;
+	max-width: 500px;
+    padding: 20px; /* Espace intérieur */
+    background-color: #f9f9f9; /* Fond clair */
+    border: 1px solid #e0e0e0; /* Bordure légère */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+/* Styles pour les titres des sections (Soft Skills et Hard Skills) */
+.skills .soft-skills h3,
+.skills .hard-skills h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+	text-align: center;
+}
+
+/* Styles pour les paragraphes */
+.skills .soft-skills p,
+.skills .hard-skills p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #666;
+}
+
+/* Styles pour les barres de progression */
+.skills .progress {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.skills .progress-bar {
+    height: 100%;
+    background-color: #ADD8E6;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills .skills-container {
+        flex-direction: column; /* Affiche les sections en colonne */
+        gap: 20px; /* Réduit l'espace entre les sections */
+    }
+}
+
+.contact {
+    padding: 40px 20px;
+    background-color: #000000;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact .contact-highlight {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form .name-fields {
+    display: flex;
+    gap: 15px;
+}
+
+.contact form .name-fields input {
+    flex: 1;
+}
+/* Augmenter la hauteur du champ de message */
+.contact form textarea {
+    min-height: 150px; /* Hauteur minimale de 150px */
+    resize: vertical; /* Permet à l'utilisateur de redimensionner verticalement */
+}
+
+.contact form .btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: #0080ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form .btn:hover {
+    background-color: #ff6347;
+}
+
+/* FOOTER */
+footer {
+    display: flex; /* Active Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 20px;
+    background-color: #fff; /* Fond sombre */
+    color: #000000; /* Texte en blanc */
+    border-top: 1px solid #444; /* Bordure supérieure */
+	font-size: 12px;
+}
+
+/* Styles pour la partie gauche du footer */
+footer .footer-left {
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+/* Styles pour la partie droite du footer */
+footer .footer-right {
+    text-align: right; /* Aligne le texte à droite */
+}
+
+/* Styles pour le prénom */
+footer .prenom {
+    color: #ff6347; /* Couleur orangée pour le prénom */
+    font-weight: bold;
+}
+/* styles.css */
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
+/* styles.css */
+
+html {
+    scroll-behavior: smooth; /* Active le défilement fluide */
+}
