@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation de dates</title>
+	 <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 8px 16px;
+            margin-top: 10px;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+	<h1>Manipulation des dates</h1>
+	
+	<!-- Entrez une date -->
+	<label for="date-saisie">Entrez une date (JJ-MM-AAAA) :</label>
+	<input type="text" id="date-saisie" placeholder="JJ-MM-AAAA">
+	
+	<!-- Pour les calculs -->
+	<button onclick="afficherDetailsDate()">Afficher les détails de la date</button>
+    <button onclick="calculerDifferenceJours()">Calculer la différence en jours</button>
+	
+
+	<p id="resultat-jour"></p>
+    <p id="resultat-mois"></p>
+    <p id="resultat-annee"></p>
+    <p id="resultat-difference"></p>
+
+    <!-- Lien vers le fichier exercise3.js -->
+    <script src="exercise3.js"></script>
+
+</body>
+</html>

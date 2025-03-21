@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+.highlight {
+    color: blue;
+    font-weight: bold;
+}
+li {
+    color: green;
+}
+.special {
+    border: 2px solid red;
+    background-color: lightgray;
+}
+#premier {
+    background-color: yellow;
+}
